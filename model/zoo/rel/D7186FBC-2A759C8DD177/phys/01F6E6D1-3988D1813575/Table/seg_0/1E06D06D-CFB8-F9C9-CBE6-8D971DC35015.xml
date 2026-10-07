@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="zamestnanec" directorySegmentName="seg_0" id="1E06D06D-CFB8-F9C9-CBE6-8D971DC35015">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="priezvisko" id="0228717E-5980-3081-02C8-0BB41BB45481">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="datum_nastupu" id="03B776C2-A0BE-D2A7-8199-4BCF4F86C27F">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="meno" id="4F3CCD99-EC73-5F70-8B22-FDCC51178E38">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_zamestnanca" id="7F59C5A0-A22A-FAF6-F234-07317401DC5F">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<autoIncrementDDL>DEFAULT_CLAUSE</autoIncrementDDL>
+<defaultValue>seq_zamestnanec.NEXTVAL</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="email" id="9942FB05-B881-486F-A458-F2B9BEE854FF">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="datum_odchodu" id="CF0B31FC-822F-AC54-12AE-F34915D0FAE7">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="pozicia" id="E5B32884-64CC-2902-3E03-810D848FA10E">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="pk_zamestnanec" id="BB58547F-8AC0-11FB-2AEB-7ACDD3B78CAB">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="ch_zamestnanec_pozicia" id="0051D904-EC87-4525-5794-BF29B7DF5929">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="ch_zamestnanec_datumy" id="973EA4F4-D9C3-79B5-7AA1-7F63131BEDD9">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+</tableCheckConstraints>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="uk_zamestnanec_email" id="263C7651-418F-662D-527C-9BA762C2BA35">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

@@ -1,0 +1,190 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StructuredType class="oracle.dbtools.crest.model.design.datatypes.StructuredType" name="t_taxonomia" directorySegmentName="seg_0" id="1DD4CA52-6B63-B1F4-AF1E-C2BC25B91C14">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>00EBD911-9652-1BA0-62CF-78391474AA0E</importedID>
+<predefined>false</predefined>
+<final>false</final>
+<instantiable>true</instantiable>
+<attributes itemClass="oracle.dbtools.crest.model.design.datatypes.TypeElement">
+<Attribute name="trieda" id="E43D07DE-4ACC-7ED7-C535-8C05A31B0AA7">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<generatorID>840520F3-C19B-6FE3-0639-F359F96F8580</generatorID>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>840520F3-C19B-6FE3-0639-F359F96F8580</importedID>
+<mandatory>false</mandatory>
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<size>40</size>
+<type>LOGDT024</type>
+</Attribute>
+<Attribute name="rad" id="2AA6F0CE-14C8-A6A0-FCD2-5807164F416C">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<generatorID>FA028DCF-D3DA-E573-CA47-A92C96901043</generatorID>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>FA028DCF-D3DA-E573-CA47-A92C96901043</importedID>
+<mandatory>false</mandatory>
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<size>40</size>
+<type>LOGDT024</type>
+</Attribute>
+<Attribute name="celad" id="1E5114D5-FD73-3A37-BCE5-4D4D6674326E">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<generatorID>8D732617-AAEC-B80C-9050-A5595DABC2BB</generatorID>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>8D732617-AAEC-B80C-9050-A5595DABC2BB</importedID>
+<mandatory>false</mandatory>
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<size>40</size>
+<type>LOGDT024</type>
+</Attribute>
+<Attribute name="rod" id="BD3F4E0A-1AF3-BB56-DBDB-3F0F2BE038F3">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<generatorID>5DE657BE-C819-D15B-792E-3709375A08CE</generatorID>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>5DE657BE-C819-D15B-792E-3709375A08CE</importedID>
+<mandatory>false</mandatory>
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<size>40</size>
+<type>LOGDT024</type>
+</Attribute>
+<Attribute name="epiteton" id="6AB18D3A-60B2-AA41-1F33-030787C31E27">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<generatorID>07E1AF03-EA02-9ACC-C60F-ED4C172C5124</generatorID>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>07E1AF03-EA02-9ACC-C60F-ED4C172C5124</importedID>
+<mandatory>false</mandatory>
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<size>60</size>
+<type>LOGDT024</type>
+</Attribute>
+</attributes>
+<methods itemClass="oracle.dbtools.crest.model.design.datatypes.Method">
+<Method name="t_taxonomia" id="FB6E94C0-FC4A-8A58-B59D-F120A8295F57">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<generatorID>86446320-6430-6070-CB8B-41E914DD031D</generatorID>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>86446320-6430-6070-CB8B-41E914DD031D</importedID>
+<body><![CDATA[v_nazov VARCHAR2(120) := TRIM(REGEXP_REPLACE(p_vedecky_nazov, '\s+', ' ')); v_medzera PLS_INTEGER := INSTR(v_nazov, ' '); BEGIN IF TRIM(p_trieda) IS NULL OR TRIM(p_rad) IS NULL OR TRIM(p_celad) IS NULL THEN RAISE_APPLICATION_ERROR(-20001, 'Trieda, rad aj celad su povinne: ' || p_vedecky_nazov); END IF; IF v_medzera = 0 THEN RAISE_APPLICATION_ERROR(-20002, 'Vedecky nazov musi obsahovat rod aj druh: ' || p_vedecky_nazov); END IF; SELF.trieda := INITCAP(TRIM(p_trieda)); SELF.rad := INITCAP(TRIM(p_rad)); SELF.celad := INITCAP(TRIM(p_celad)); SELF.rod := INITCAP(SUBSTR(v_nazov, 1, v_medzera - 1)); SELF.epiteton := LOWER(SUBSTR(v_nazov, v_medzera + 1)); RETURN; END;]]></body>
+<constructor>true</constructor>
+<number>0</number>
+<returnValue class="oracle.dbtools.crest.model.design.datatypes.MethodParam" name="RETURN" id="0900E6E2-EB1A-B178-B4E4-F55F718AE75E">
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<typeID>LOGDT017</typeID>
+</returnValue>
+<parameters>
+<Parameter class="oracle.dbtools.crest.model.design.datatypes.MethodParam" name="p_trieda" id="59527EA0-FE0F-F70B-C745-BD97C13E76DE">
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<typeID>LOGDT024</typeID>
+</Parameter>
+<Parameter class="oracle.dbtools.crest.model.design.datatypes.MethodParam" name="p_rad" id="CBD392EF-3B9D-E876-4C4C-4135F36195A1">
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<typeID>LOGDT024</typeID>
+</Parameter>
+<Parameter class="oracle.dbtools.crest.model.design.datatypes.MethodParam" name="p_celad" id="469C1E46-FE79-DDD5-9802-442DEA00C520">
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<typeID>LOGDT024</typeID>
+</Parameter>
+<Parameter class="oracle.dbtools.crest.model.design.datatypes.MethodParam" name="p_vedecky_nazov" id="0BEC7A70-8DA3-302E-A785-218DC2E3CECA">
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<typeID>LOGDT024</typeID>
+</Parameter>
+</parameters>
+</Method>
+<Method name="vedecky_nazov" id="0DD75D96-68D0-46DB-08CF-D36738E1F6D6">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<generatorID>978422BD-4BDB-B02D-A652-101D88F31554</generatorID>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>978422BD-4BDB-B02D-A652-101D88F31554</importedID>
+<body><![CDATA[BEGIN RETURN rod || ' ' || epiteton; END;]]></body>
+<number>0</number>
+<returnValue class="oracle.dbtools.crest.model.design.datatypes.MethodParam" name="RETURN" id="AD04763E-F9DF-0D99-2FC7-94381C8FD227">
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<typeID>LOGDT024</typeID>
+</returnValue>
+</Method>
+<Method name="skrateny_nazov" id="C481F09B-F1D9-BC35-6BAD-3474F379CF5C">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<generatorID>47C5CD81-0F3A-CF30-793A-6BC4E1BBC9EE</generatorID>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>47C5CD81-0F3A-CF30-793A-6BC4E1BBC9EE</importedID>
+<body><![CDATA[BEGIN RETURN SUBSTR(rod, 1, 1) || '. ' || epiteton; END;]]></body>
+<number>0</number>
+<returnValue class="oracle.dbtools.crest.model.design.datatypes.MethodParam" name="RETURN" id="02CFD452-7BB4-AE12-84D8-62F54CE264D9">
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<typeID>LOGDT024</typeID>
+</returnValue>
+</Method>
+<Method name="pribuznost" id="21061D3F-6A5E-7071-F905-92F0B091A584">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<generatorID>03C17C27-194C-09B1-22AB-5648B6576B5A</generatorID>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>03C17C27-194C-09B1-22AB-5648B6576B5A</importedID>
+<body><![CDATA[BEGIN IF p_iny IS NULL THEN RETURN 0; END IF; IF trieda IS NULL OR p_iny.trieda IS NULL OR trieda <> p_iny.trieda THEN RETURN 0; END IF; IF rad IS NULL OR p_iny.rad IS NULL OR rad <> p_iny.rad THEN RETURN 1; END IF; IF celad IS NULL OR p_iny.celad IS NULL OR celad <> p_iny.celad THEN RETURN 2; END IF; IF rod IS NULL OR p_iny.rod IS NULL OR rod <> p_iny.rod THEN RETURN 3; END IF; IF epiteton IS NULL OR p_iny.epiteton IS NULL OR epiteton <> p_iny.epiteton THEN RETURN 4; END IF; RETURN 5; END; MAP]]></body>
+<number>0</number>
+<returnValue class="oracle.dbtools.crest.model.design.datatypes.MethodParam" name="RETURN" id="3E4887D2-BFDB-7F2A-3DE1-02AC1162714D">
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<typeID>LOGDT019</typeID>
+</returnValue>
+<parameters>
+<Parameter class="oracle.dbtools.crest.model.design.datatypes.MethodParam" name="p_iny" id="ED9BAFDA-457A-6E22-FBB3-2A68774E46E6">
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<typeID>1DD4CA52-6B63-B1F4-AF1E-C2BC25B91C14</typeID>
+</Parameter>
+</parameters>
+</Method>
+<Method name="triedenie" id="B466A323-4B29-CDD0-11FA-13754D57A536">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<generatorID>96A39FBE-5DFB-6A6A-CC7B-8C3CCC5DB230</generatorID>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>96A39FBE-5DFB-6A6A-CC7B-8C3CCC5DB230</importedID>
+<body><![CDATA[BEGIN RETURN RPAD(NVL(trieda, ' '), 40) || '|' || RPAD(NVL(rad, ' '), 40) || '|' || RPAD(NVL(celad, ' '), 40) || '|' || RPAD(NVL(rod, ' '), 40) || '|' || NVL(epiteton, ' '); END;]]></body>
+<number>0</number>
+<returnValue class="oracle.dbtools.crest.model.design.datatypes.MethodParam" name="RETURN" id="57693D4C-2D07-1E17-798A-DA016ABC4212">
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<typeID>LOGDT024</typeID>
+</returnValue>
+</Method>
+</methods>
+</StructuredType>

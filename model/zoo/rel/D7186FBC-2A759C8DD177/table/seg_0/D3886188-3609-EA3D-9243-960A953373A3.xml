@@ -1,0 +1,261 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D3886188-3609-EA3D-9243-960A953373A3" name="veterinarny_zaznam">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Veterinarne zaznamy zvierat]]></commentInRDBMS>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>7E03523D-981A-7022-E1F9-006802D25760</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_zaznamu" id="84D5B1C6-1872-190C-6DCF-1AA4FBF63E8D">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>EC9B9A18-EFE7-0FBD-10CB-D55D0066ED7A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>00C550A1-A891-AC47-CFAD-9D31F4FB5E86</domain>
+<defaultValue>seq_veterinarny_zaznam.NEXTVAL</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_veterinarny_zaznam</autoIncrementSequenceName>
+</Column>
+<Column name="id_zvierata" id="AA509BC4-F00E-FBF3-A631-94E6137E9B79">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>FF4E6241-EEAE-D462-2331-DBAA56FA1E06</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>00C550A1-A891-AC47-CFAD-9D31F4FB5E86</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1EF133E2-1F7D-8609-9882-724FBB578251" referredColumn="5380718D-B6D5-40AB-6DD3-0E777E1D4CD8"/>
+</associations>
+</Column>
+<Column name="id_zamestnanca" id="BEA719E0-52E4-D485-4BB1-BF3236CB9AA4">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Veterinar, ktory zaznam vytvoril]]></commentInRDBMS>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>5055BD3C-E0F0-C1C0-6CAA-C749896F6B89</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>00C550A1-A891-AC47-CFAD-9D31F4FB5E86</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9E923877-F227-8412-5165-5E77F0D3DC26" referredColumn="7F59C5A0-A22A-FAF6-F234-07317401DC5F"/>
+</associations>
+</Column>
+<Column name="cas" id="3CACAF87-2BBE-85CB-7962-86E0013E2810">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>938BF927-DEDB-FE5D-4B8C-048AC823C5B3</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>A3F429E6-AAED-8CD2-646B-D19498D46576</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="typ" id="DC77A9BA-E690-069A-CEB1-597E67A9B41E">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>F642FF26-3772-C27D-A99B-3EE0BBCDCF50</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DBB00E47-7664-FAF1-7D1B-4A77B6CADC18</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="diagnoza" id="5932F065-11FE-222E-057C-E6546194EB0D">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>5E85A8A9-4879-C1C7-5ABB-8CD2C8A7D1B6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D0F5AC3D-D76B-655C-7005-A90698B422C8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="popis" id="2383F64F-649F-6F36-19B1-126B3872DC80">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>06A60E27-C366-B3AC-945C-CD2D8CD5A446</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0778A650-6207-F8CB-0677-FE663BF78F9A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lieky" id="8870FB2B-A32F-4880-C131-2200340ADA58">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Predpisane lieky (NESTED TABLE T_LIEKY)]]></commentInRDBMS>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>F1D6CBCE-1D25-5139-322A-795C7F645DD6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>4</use>
+<collectionType>1477E6DF-0755-901D-1F01-41CB8B05FD00</collectionType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vysledky" id="DF277442-4001-2A6E-D6B6-4ED8A0E3CE09">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Namerane hodnoty v JSON (vaha, teplota, krvny obraz)]]></commentInRDBMS>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>F750B33A-752C-CA7D-9642-179FAD4AAE2A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>96B6FA90-A77B-2293-956A-33384F21EA62</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nalez" id="07D95E8B-A72C-E47E-2E06-15750FD9DEA2">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Priloha - PDF sprava alebo rontgenova snimka]]></commentInRDBMS>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>2501AF4E-55E1-3A42-C2C0-0733E989708E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>26721422-4736-038A-4868-D18B9BDBBA71</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nalez_nazov" id="86BA5F5F-CBE2-C844-B493-6D4E7EE57EB4">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>F56AF995-365F-6882-697E-7DA6ABCB7AD6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D0F5AC3D-D76B-655C-7005-A90698B422C8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nalez_mime" id="C8E9822A-3E5B-258B-20C9-2429EA0B4E68">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>F8FD51F9-9C6C-F2A3-D12A-15C7FE3E3FD4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9760E9C6-A174-9A24-4AA6-33E157B8CCC1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="35C9F533-42BA-23C1-3AA5-39CA842F949C" name="pk_veterinarny_zaznam">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>1164E284-817E-9704-44CF-3495A40664BA</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84D5B1C6-1872-190C-6DCF-1AA4FBF63E8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D9FA2A86-06EF-02D6-08FF-181A3B021AC4" name="ix_vet_zviera">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>C8255EC7-DA92-D482-C091-819AD1F0515F</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA509BC4-F00E-FBF3-A631-94E6137E9B79"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E1612BD1-72A9-8055-6D41-05EBDDBB8BC9" name="ix_vet_zamestnanec">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>CB8C8B39-B68F-4853-81D6-89D1BC9FC61C</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BEA719E0-52E4-D485-4BB1-BF3236CB9AA4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98356D78-4C81-C328-C636-F23265B50DBF" name="fk_vet_zamestnanec">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BEA719E0-52E4-D485-4BB1-BF3236CB9AA4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="95DF772C-ECA6-3F0F-31D4-044D1346A7D1" name="fk_vet_zviera">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA509BC4-F00E-FBF3-A631-94E6137E9B79"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ch_vet_typ" directorySegmentName="seg_0" id="C1585427-877F-A0B2-0BFD-246E321B955E">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>303799B4-4AAB-A896-C1C4-72ACD46668A0</importedID>
+<rule><![CDATA[typ IN ('PREHLIADKA', 'OCKOVANIE', 'LIECBA', 'ZAKROK')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="ch_vet_vysledky" directorySegmentName="seg_0" id="16C6FA01-CB9E-4129-65E5-40CE079CDABD">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>A95997A1-FD00-DA4E-BF86-920B75763880</importedID>
+<rule><![CDATA[vysledky IS JSON]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="ch_vet_nalez" directorySegmentName="seg_0" id="059C6336-EFE5-972D-2E23-E450430002E9">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>91DD0860-4542-B6E8-5C64-23013798097B</importedID>
+<rule><![CDATA[nalez IS NULL OR (nalez_nazov IS NOT NULL AND nalez_mime IS NOT NULL)]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

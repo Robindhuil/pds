@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="fotka" directorySegmentName="seg_0" id="AD603C6F-F419-E61C-BA27-2ADD085696F8">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="hlavna" id="06C05722-ABFC-C676-D139-807D78970162">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<defaultValue>&apos;N&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="datum_nahratia" id="1BA6520D-C62F-12E0-8197-52AF2C3CBBEB">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<defaultValue>SYSDATE</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="mime_typ" id="22A84C22-AB2C-4B4A-56CC-038B7C208CD9">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_zvierata" id="65E4AE54-9439-4A89-8E21-B97A536F2703">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="obsah" id="939AF412-1B23-9EFD-D9CF-2F36C832958D">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nazov_suboru" id="A2E7FA59-C06A-CA72-2D95-5779123505FE">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="popis" id="C30EB507-392B-3845-7441-66561EC4592E">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_fotky" id="ED9BABA5-9362-D7F5-AC08-D78E71A05228">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<autoIncrementDDL>DEFAULT_CLAUSE</autoIncrementDDL>
+<defaultValue>seq_fotka.NEXTVAL</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="ix_fotka_zviera" id="23D56784-4E73-DF4B-EA6A-EF4539E35AD3">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="ux_fotka_hlavna" id="54D34617-F778-4858-8408-699D4A556C13">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="fk_fotka_zviera" id="D578260D-D249-0142-B7ED-E858DEC7168B">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<lobStorages>
+<LobStorage class="oracle.dbtools.crest.model.design.storage.oracle.v11g.LobStorageOraclev11g" name="LS3" id="1D630BA3-4221-6032-C5A6-B30657AC33C8">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:45 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<cache>NOCACHE</cache>
+<column>obsah</column>
+<lobStorageType>SECUREFILE</lobStorageType>
+</LobStorage>
+</lobStorages>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="pk_fotka" id="C922229C-B14E-3A68-CE9B-06600AB05F17">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="ch_fotka_mime" id="3060B465-B323-5F76-9B63-A2B229F602B8">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="ch_fotka_hlavna" id="C187D5A0-78E1-A362-F8EC-9BDF24D7A491">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+</tableCheckConstraints>
+</TableProxyOraclev20c>

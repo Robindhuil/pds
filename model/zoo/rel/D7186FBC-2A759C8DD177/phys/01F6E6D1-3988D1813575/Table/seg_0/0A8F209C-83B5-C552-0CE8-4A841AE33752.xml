@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="druh" directorySegmentName="seg_0" id="0A8F209C-83B5-C552-0CE8-4A841AE33752">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="taxonomia.rad" id="0B560825-285F-26D4-E9BA-B089F16ED951">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="dlzka_zivota" id="1D55F831-8B39-A001-D70F-F53BDB35BBD5">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="taxonomia" id="34527F64-2339-C0AE-2A6F-CC8B7EDA40C7">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="strava" id="34B68814-57E9-CCD2-8F4A-48F183D51569">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="stav_ohrozenia" id="34E283A2-C666-769F-895C-9DB2FA7F6419">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_druhu" id="3CAE57F6-69A2-0D4C-38E9-F5EB3C053C94">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<autoIncrementDDL>DEFAULT_CLAUSE</autoIncrementDDL>
+<defaultValue>seq_druh.NEXTVAL</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="nazov" id="4E97697E-87C1-DA7F-3485-6AF0B3DCCE14">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="taxonomia.celad" id="55A7ADE4-7895-8845-EF11-C07A6A5A82E4">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="taxonomia.rod" id="6BF01B5D-C4AF-A017-8BD4-4ED8AB104335">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="taxonomia.epiteton" id="7C16A6AA-3DDD-CCC5-F7BA-FF66D662CDFA">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="taxonomia.trieda" id="A7BBB67A-F79F-19BB-711C-6EC41A5886F3">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="pk_druh" id="49F12C20-557A-C214-47C8-8BE678C41803">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="ch_druh_ohrozenie" id="26CB387F-5053-E046-4AE5-F080123C8F17">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="ch_druh_taxonomia" id="B4165BC9-9F93-C711-B3E8-F441814DBB73">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="ch_druh_dlzka_zivota" id="F8627DBB-2BA7-1571-327B-CDA5FFCF0055">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+</tableCheckConstraints>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="uk_druh_vedecky_nazov" id="29754D03-B521-BC01-FD0A-8C9DEAE92D2A">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="uk_druh_nazov" id="C381FD29-C0E7-F4BD-B13A-F374E52EC0BF">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

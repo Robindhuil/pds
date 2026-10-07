@@ -1,0 +1,244 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0A8F209C-83B5-C552-0CE8-4A841AE33752" name="druh">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Zivocisny druh chovany v ZOO]]></commentInRDBMS>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>5B3366FF-0466-0DD8-753F-B68957A34EEF</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_druhu" id="3CAE57F6-69A2-0D4C-38E9-F5EB3C053C94">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>1581440C-A0E2-8D27-0518-0F421492A856</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>00C550A1-A891-AC47-CFAD-9D31F4FB5E86</domain>
+<defaultValue>seq_druh.NEXTVAL</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_druh</autoIncrementSequenceName>
+</Column>
+<Column name="nazov" id="4E97697E-87C1-DA7F-3485-6AF0B3DCCE14">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Slovensky nazov druhu]]></commentInRDBMS>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>20C1E841-1C1A-74A2-2F86-134FC5F03ED4</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BE90D74F-FA13-998B-85F6-31708BF61196</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="taxonomia" id="34527F64-2339-C0AE-2A6F-CC8B7EDA40C7">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Vedecke zaradenie (objekt T_TAXONOMIA)]]></commentInRDBMS>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>C15127F2-3A30-64D6-F162-2725D4D0DA3F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>1DD4CA52-6B63-B1F4-AF1E-C2BC25B91C14</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stav_ohrozenia" id="34E283A2-C666-769F-895C-9DB2FA7F6419">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Kategoria IUCN: LC, NT, VU, EN, CR, EW, DD]]></commentInRDBMS>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>B731F43A-E9CD-77A5-0D91-7030F45EE44F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>AF7B0C4C-F1D3-EB9E-9776-91ECC98E8327</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="strava" id="34B68814-57E9-CCD2-8F4A-48F183D51569">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Kategorie krmiva, ktore druh zerie (VARRAY T_STRAVA, kody ako KRMIVO.KATEGORIA)]]></commentInRDBMS>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>5D2734CA-7C38-E3BE-0BBE-DE0CDC8FB510</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>4</use>
+<collectionType>B2AEC7B1-8478-7947-59E9-EB7DED3D25BD</collectionType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dlzka_zivota" id="1D55F831-8B39-A001-D70F-F53BDB35BBD5">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Priemerna dlzka zivota v ludskej starostlivosti (roky)]]></commentInRDBMS>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>D1A2A5FF-50B3-E156-269B-CED4AB0CF4A4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1BD435FA-F319-EDBA-D58C-2F8114EC43BE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<nestedColumns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<nestedColumn name="taxonomia.trieda" id="A7BBB67A-F79F-19BB-711C-6EC41A5886F3">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>34527F64-2339-C0AE-2A6F-CC8B7EDA40C7</parentObject>
+<structAttributeID>E43D07DE-4ACC-7ED7-C535-8C05A31B0AA7</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,0,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</nestedColumn>
+<nestedColumn name="taxonomia.rad" id="0B560825-285F-26D4-E9BA-B089F16ED951">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>34527F64-2339-C0AE-2A6F-CC8B7EDA40C7</parentObject>
+<structAttributeID>2AA6F0CE-14C8-A6A0-FCD2-5807164F416C</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,0,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</nestedColumn>
+<nestedColumn name="taxonomia.celad" id="55A7ADE4-7895-8845-EF11-C07A6A5A82E4">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>34527F64-2339-C0AE-2A6F-CC8B7EDA40C7</parentObject>
+<structAttributeID>1E5114D5-FD73-3A37-BCE5-4D4D6674326E</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,0,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</nestedColumn>
+<nestedColumn name="taxonomia.rod" id="6BF01B5D-C4AF-A017-8BD4-4ED8AB104335">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>34527F64-2339-C0AE-2A6F-CC8B7EDA40C7</parentObject>
+<structAttributeID>BD3F4E0A-1AF3-BB56-DBDB-3F0F2BE038F3</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,0,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</nestedColumn>
+<nestedColumn name="taxonomia.epiteton" id="7C16A6AA-3DDD-CCC5-F7BA-FF66D662CDFA">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>34527F64-2339-C0AE-2A6F-CC8B7EDA40C7</parentObject>
+<structAttributeID>6AB18D3A-60B2-AA41-1F33-030787C31E27</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,0,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</nestedColumn>
+</nestedColumns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="49F12C20-557A-C214-47C8-8BE678C41803" name="pk_druh">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>0AE11A81-0DD9-1150-5839-EAC457CA8700</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CAE57F6-69A2-0D4C-38E9-F5EB3C053C94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C381FD29-C0E7-F4BD-B13A-F374E52EC0BF" name="uk_druh_nazov">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>0513B9D8-8C6D-9D0F-2C6E-6CC48CF65261</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E97697E-87C1-DA7F-3485-6AF0B3DCCE14"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="29754D03-B521-BC01-FD0A-8C9DEAE92D2A" name="uk_druh_vedecky_nazov">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>DD700397-D96C-9A39-0C40-2AC50CD9A969</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BF01B5D-C4AF-A017-8BD4-4ED8AB104335"/>
+<colUsage columnID="7C16A6AA-3DDD-CCC5-F7BA-FF66D662CDFA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ch_druh_taxonomia" directorySegmentName="seg_0" id="B4165BC9-9F93-C711-B3E8-F441814DBB73">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>D19DDD67-43FC-4B2D-2CD2-A92C594A9670</importedID>
+<rule><![CDATA[taxonomia.trieda IS NOT NULL AND taxonomia.rad IS NOT NULL AND taxonomia.celad IS NOT NULL AND taxonomia.rod IS NOT NULL AND taxonomia.epiteton IS NOT NULL]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="ch_druh_ohrozenie" directorySegmentName="seg_0" id="26CB387F-5053-E046-4AE5-F080123C8F17">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>78A12703-AE2E-0ABE-3CA1-0B31A1ABC903</importedID>
+<rule><![CDATA[stav_ohrozenia IN ('LC', 'NT', 'VU', 'EN', 'CR', 'EW', 'DD')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="ch_druh_dlzka_zivota" directorySegmentName="seg_0" id="F8627DBB-2BA7-1571-327B-CDA5FFCF0055">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>CF567483-51ED-AE2F-D8BF-3C623EBB1B6B</importedID>
+<rule><![CDATA[dlzka_zivota > 0]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9E923877-F227-8412-5165-5E77F0D3DC26" containerWithKeyObject="D3886188-3609-EA3D-9243-960A953373A3" localFKIndex="98356D78-4C81-C328-C636-F23265B50DBF" name="fk_vet_zamestnanec">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>A5101A85-ACD2-2F3B-06AD-D6524977367F</importedID>
+<referredTableLongName>zamestnanec</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1E06D06D-CFB8-F9C9-CBE6-8D971DC35015</referredTableID>
+<keyObject>BB58547F-8AC0-11FB-2AEB-7ACDD3B78CAB</keyObject>
+<referredKeyID>BB58547F-8AC0-11FB-2AEB-7ACDD3B78CAB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_zamestnanca</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

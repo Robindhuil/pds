@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="zoo" id="9A99E728-A981-D198-D1B9-8901FA082110" version="3.5">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:35:06 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>9A99E728-A981-D198-D1B9-8901FA082110</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="DAF992D1-0E71-AC80-817E-BA4D5C3F0FD4">
+<designStoragePath>C:\zoo_ddl</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

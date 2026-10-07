@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9960060A-C582-F8BD-E215-C4D20FDF648F" name="umiestnenie">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Casova historia umiestnenia zvierat vo vybehoch (interval <datum_od, datum_do))]]></commentInRDBMS>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>B4289F7C-1CEF-AEE3-561F-846154498EF3</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_umiestnenia" id="2A4E589E-09AB-27CD-D876-F2E940F89F95">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>14D03A89-AE48-69D1-4C66-04679397D3A4</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>00C550A1-A891-AC47-CFAD-9D31F4FB5E86</domain>
+<defaultValue>seq_umiestnenie.NEXTVAL</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_umiestnenie</autoIncrementSequenceName>
+</Column>
+<Column name="id_zvierata" id="3089C0AA-6EC6-4474-F473-7C07EB005AB0">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>085D28FE-53AF-BC98-10F4-1D0905BD5A8C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>00C550A1-A891-AC47-CFAD-9D31F4FB5E86</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="42705307-F25D-2632-86F7-FC5EC48B23EA" referredColumn="5380718D-B6D5-40AB-6DD3-0E777E1D4CD8"/>
+</associations>
+</Column>
+<Column name="id_vybehu" id="439D7FA7-E4E0-A68D-ED6F-226CA8861820">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>00C1C763-3638-534D-9E58-71A347FD362B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>00C550A1-A891-AC47-CFAD-9D31F4FB5E86</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1FAB0F09-C8D6-4516-ABC6-952FDC465DE2" referredColumn="F43AB524-C2EC-629A-E6A4-A1969DE2D613"/>
+</associations>
+</Column>
+<Column name="datum_od" id="E6368AFD-940D-D458-0963-F8E879BA6150">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>CE0F5D7F-C755-1893-AD6E-670C2ED5F9F0</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>8AE1C1AB-8D2D-1FB3-7427-878D28A1F20C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datum_do" id="4650BB33-2444-E305-E8C5-9444670F2DF9">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Koniec umiestnenia (exkluzivne); NULL = zviera je vo vybehu teraz]]></commentInRDBMS>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>2A18E688-C0B4-04CC-D5E0-78EADBD32506</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>8AE1C1AB-8D2D-1FB3-7427-878D28A1F20C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6F4A2E4B-0EBA-2E5F-7D13-E360247F9C12" name="pk_umiestnenie">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>72E035DC-505D-DFDD-1748-F736C2C2941D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A4E589E-09AB-27CD-D876-F2E940F89F95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5EDBE7DD-B1AE-F0A1-43BB-F79568863530" name="ix_umiestnenie_zviera">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>A15C3709-3721-9E15-629F-B3ECAA9B69FA</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3089C0AA-6EC6-4474-F473-7C07EB005AB0"/>
+<colUsage columnID="E6368AFD-940D-D458-0963-F8E879BA6150"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D37EFB9A-B070-62F5-3B01-26C8C2C78845" name="ix_umiestnenie_vybeh">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>98DA7427-6E43-EE33-69B7-4EC6D8745DF3</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="439D7FA7-E4E0-A68D-ED6F-226CA8861820"/>
+<colUsage columnID="E6368AFD-940D-D458-0963-F8E879BA6150"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F980AA2-7DB1-A546-5FA9-E33F46971993" name="fk_umiestnenie_vybeh">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="439D7FA7-E4E0-A68D-ED6F-226CA8861820"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="41DCED57-0928-E981-EEF2-2C3EA0C288ED" name="fk_umiestnenie_zviera">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3089C0AA-6EC6-4474-F473-7C07EB005AB0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ch_umiestnenie_datumy" directorySegmentName="seg_0" id="CFB7DE34-C998-D709-39D3-F0A90F32681D">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>F8475311-B9CE-9467-4C10-24683AAD9623</importedID>
+<rule><![CDATA[datum_do IS NULL OR datum_do > datum_od]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

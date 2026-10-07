@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FBC99437-CBDC-1DE2-81B3-68E8FDA54DD1" name="krmivo">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Druhy krmiva a ich nakupna cena]]></commentInRDBMS>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>FBC5F1FF-F5EA-F9CE-E889-7B649E656115</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_krmiva" id="1C72E73A-6060-9EB2-C19A-745074415571">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>45FCC15C-45B4-1F68-FA4E-999A1AB68730</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>00C550A1-A891-AC47-CFAD-9D31F4FB5E86</domain>
+<defaultValue>seq_krmivo.NEXTVAL</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_krmivo</autoIncrementSequenceName>
+</Column>
+<Column name="nazov" id="9A396A3B-8A5E-84DA-65F8-9FD771D4F01D">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>4D3D9DBC-E1A7-4A0A-34BC-26E06E8F90E3</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BE90D74F-FA13-998B-85F6-31708BF61196</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="kategoria" id="57679417-5886-306B-0685-8DA494C7576C">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>B5763D72-7E22-BA72-92BE-DAEA445EE47B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DBB00E47-7664-FAF1-7D1B-4A77B6CADC18</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cena_za_kg" id="D6FFA9C1-AC49-A8DD-44A6-95F5152E57F9">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>9F67E522-96D0-BE0E-C319-C3BBBAE68CB5</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8C5B079F-A73C-11B6-2F4C-B4D5250D1FE3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7F1627D3-D9E7-7658-5EBB-88BE64E13D0B" name="pk_krmivo">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>78B23F63-E3D3-3335-AD13-65B8E6403383</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C72E73A-6060-9EB2-C19A-745074415571"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="55D5B9BC-03FC-83E7-58AB-ED85E0147414" name="uk_krmivo_nazov">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>DF2635AF-CC8F-2390-9A19-4EB9588965E7</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A396A3B-8A5E-84DA-65F8-9FD771D4F01D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ch_krmivo_kategoria" directorySegmentName="seg_0" id="6E13210F-DCAC-4663-3AEC-0B958D68570C">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>B76250B5-DBD6-F4F8-3283-A0411734A251</importedID>
+<rule><![CDATA[kategoria IN ('MASO', 'RYBY', 'HMYZ', 'OVOCIE', 'ZELENINA', 'SENO', 'ZRNINY', 'GRANULE')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="ch_krmivo_cena" directorySegmentName="seg_0" id="0AED3058-FFCF-3938-5875-D96662E78399">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>9D4D22D8-C764-8431-D614-FB47DB6B2098</importedID>
+<rule><![CDATA[cena_za_kg > 0]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="D7186FBC-338C-F9B2-96C4-2A759C8DD177" mainViewID="964B5859-4A5E-5609-A8CB-E073181AF3EF">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:35:15 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>01F6E6D1-21D0-CFBD-ABDD-3988D1813575</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>zoo_ddl.sql</fileName>
+<pathName>C:\Users\robob\AppData\Local\Temp\claude\C--Users-robob-Documents-ROBIN-fri\71a55b91-56d7-4af7-92a8-18c8a4c2cdf4\scratchpad\dm</pathName>
+<dbType>17</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

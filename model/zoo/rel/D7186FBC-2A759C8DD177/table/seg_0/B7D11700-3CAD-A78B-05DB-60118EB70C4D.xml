@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B7D11700-3CAD-A78B-05DB-60118EB70C4D" name="vybeh">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Vybeh alebo expozicia, v ktorej su umiestnene zvierata]]></commentInRDBMS>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>EE7CA72A-6761-3EBD-AD4B-6FBF9A58B08E</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_vybehu" id="F43AB524-C2EC-629A-E6A4-A1969DE2D613">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>70E43CE9-F988-EC21-E716-0853029FF2F5</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>00C550A1-A891-AC47-CFAD-9D31F4FB5E86</domain>
+<defaultValue>seq_vybeh.NEXTVAL</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_vybeh</autoIncrementSequenceName>
+</Column>
+<Column name="nazov" id="2D3B06E9-0A22-A78F-7F85-B223C1546C0D">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>64D02133-C115-F30F-79C2-B819743C7EFD</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BE90D74F-FA13-998B-85F6-31708BF61196</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="zona" id="CB25C9A5-68B6-A878-7C65-D5884D4063B2">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Zoogeograficka zona arealu ZOO: AFRIKA, AZIA, EUROPA, AMERIKA, AUSTRALIA]]></commentInRDBMS>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>69817AB0-8619-783E-7AF7-1A58D3B047FE</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DBB00E47-7664-FAF1-7D1B-4A77B6CADC18</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="typ" id="C1AA56D4-A627-0CEE-6A34-C1CD4642160A">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>0DBED232-AEA8-468E-017E-381010800BC5</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DBB00E47-7664-FAF1-7D1B-4A77B6CADC18</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="kapacita" id="9DFF9148-C3A5-A424-1337-937C02516D14">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Maximalny pocet zvierat naraz]]></commentInRDBMS>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>4394024D-4833-F6A3-F0BA-529DE17A641D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A712F7A6-58A1-7FDE-ACDB-57BB00BBBFCB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rozloha_m2" id="A4F108AC-1018-0588-41B8-9675C36C2E68">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>2F65DACE-28F2-4F1F-26B6-E69FAB0118D7</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E7C12B75-1D03-F355-0202-F8A74B4765CA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CE49363C-9BDC-D6FA-78ED-BA5C31DC0F6F" name="pk_vybeh">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>5CF8197E-EA12-6D34-F778-D3CCCD3BA884</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F43AB524-C2EC-629A-E6A4-A1969DE2D613"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="30409172-09E5-7F67-80A1-435970D9C905" name="uk_vybeh_nazov">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>00938A47-3D8C-A595-A9E0-563B3F537D83</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D3B06E9-0A22-A78F-7F85-B223C1546C0D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ch_vybeh_zona" directorySegmentName="seg_0" id="794EC135-877F-0B41-8BB6-80B4ADDE6FDA">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>F9413E7F-7901-676D-B0BE-F157A63DFB98</importedID>
+<rule><![CDATA[zona IN ('AFRIKA', 'AZIA', 'EUROPA', 'AMERIKA', 'AUSTRALIA')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="ch_vybeh_typ" directorySegmentName="seg_0" id="F4E313DB-72F1-B85A-FEB2-DC5C18BDD073">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>7AE74CCB-CA40-B7AE-AC81-EDB50596D8BC</importedID>
+<rule><![CDATA[typ IN ('VONKAJSI', 'VNUTORNY', 'VOLIERA', 'AKVARIUM', 'TERARIUM')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="ch_vybeh_kapacita" directorySegmentName="seg_0" id="526B8771-61D1-C9D2-6640-C904B64785EE">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>F02D75BD-9DDA-2745-E8CA-43DB11D628D1</importedID>
+<rule><![CDATA[kapacita > 0]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="ch_vybeh_rozloha" directorySegmentName="seg_0" id="D32418DF-F1E0-9F57-9BCF-13E03AA5765E">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>B74D6125-2835-61AC-4D37-DBECA3931DD5</importedID>
+<rule><![CDATA[rozloha_m2 > 0]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

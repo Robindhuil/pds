@@ -1,0 +1,185 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AD603C6F-F419-E61C-BA27-2ADD085696F8" name="fotka">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fotografie zvierat ulozene v databaze]]></commentInRDBMS>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>24A19A30-5B15-698E-4210-21C96A06BD32</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_fotky" id="ED9BABA5-9362-D7F5-AC08-D78E71A05228">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>CDF57CE3-43AD-3A2B-810E-9C80C82C4E50</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>00C550A1-A891-AC47-CFAD-9D31F4FB5E86</domain>
+<defaultValue>seq_fotka.NEXTVAL</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_fotka</autoIncrementSequenceName>
+</Column>
+<Column name="id_zvierata" id="65E4AE54-9439-4A89-8E21-B97A536F2703">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>259EDF6F-0A16-7369-DF40-1F6C7D8AFFB6</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>00C550A1-A891-AC47-CFAD-9D31F4FB5E86</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A72FC1DD-1B68-62D4-AA4E-2EF2EA1B194F" referredColumn="5380718D-B6D5-40AB-6DD3-0E777E1D4CD8"/>
+</associations>
+</Column>
+<Column name="nazov_suboru" id="A2E7FA59-C06A-CA72-2D95-5779123505FE">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>DC6125BC-5665-C1B2-D274-90BC46AEAD2A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D0F5AC3D-D76B-655C-7005-A90698B422C8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mime_typ" id="22A84C22-AB2C-4B4A-56CC-038B7C208CD9">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>E552CDF7-B9B6-D042-AB48-BBA4FD93E99D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9760E9C6-A174-9A24-4AA6-33E157B8CCC1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="obsah" id="939AF412-1B23-9EFD-D9CF-2F36C832958D">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Obsah suboru (BLOB)]]></commentInRDBMS>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>7C77AE06-A850-E8B5-A26C-5F7F44B6DB1E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>26721422-4736-038A-4868-D18B9BDBBA71</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="popis" id="C30EB507-392B-3845-7441-66561EC4592E">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>EA14864A-931B-8D49-48CC-FA8C40392607</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BC0CC58B-8044-29A2-A8D1-D3B121763D8F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datum_nahratia" id="1BA6520D-C62F-12E0-8197-52AF2C3CBBEB">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>43978237-80F1-013B-E489-5A72445AC690</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>8AE1C1AB-8D2D-1FB3-7427-878D28A1F20C</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hlavna" id="06C05722-ABFC-C676-D139-807D78970162">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[A = profilova fotka zvierata (najviac jedna na zviera)]]></commentInRDBMS>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>BD8EC817-9CDA-3ECD-6333-FAF30A5653E2</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>980CE86B-5FBF-E3C9-3BB7-EC069466B2A7</domain>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C922229C-B14E-3A68-CE9B-06600AB05F17" name="pk_fotka">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>CD2AA47A-0135-A242-EAEC-1BA5E88876E7</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED9BABA5-9362-D7F5-AC08-D78E71A05228"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="23D56784-4E73-DF4B-EA6A-EF4539E35AD3" name="ix_fotka_zviera">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>ABB5C918-1436-3223-9D6B-61CB2BAE97E9</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="65E4AE54-9439-4A89-8E21-B97A536F2703"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54D34617-F778-4858-8408-699D4A556C13" name="ux_fotka_hlavna">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>C5A7193C-08EA-5947-D8CC-F7646D33D2FB</importedID>
+<indexExpression>CASE WHEN hlavna = &apos;A&apos; THEN id_zvierata END</indexExpression>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="D578260D-D249-0142-B7ED-E858DEC7168B" name="fk_fotka_zviera">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="65E4AE54-9439-4A89-8E21-B97A536F2703"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ch_fotka_mime" directorySegmentName="seg_0" id="3060B465-B323-5F76-9B63-A2B229F602B8">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>E4912558-2B36-11AE-9E9E-0D28B442A668</importedID>
+<rule><![CDATA[mime_typ LIKE 'image/%']]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="ch_fotka_hlavna" directorySegmentName="seg_0" id="C187D5A0-78E1-A362-F8EC-9BDF24D7A491">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>B0DD5F84-E06D-6EF9-CD0F-B9A1BDBFDE78</importedID>
+<rule><![CDATA[hlavna IN ('A', 'N')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

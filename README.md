@@ -27,6 +27,16 @@ a `NULL` v „do“ znamená, že interval stále trvá.
 Evidujú sa len druhy chované a sledované po jedincoch (cicavce, vtáky, plazy, väčšie ryby);
 hejná drobných rýb a hmyz sa neevidujú.
 
+### Relačný model (SQL Developer Data Modeler)
+
+Návrh je v [`model/zoo.dmd`](model/zoo.dmd) (otvára sa v Data Modeleri cez File → Open),
+diagram na tlač v [`model/zoo_relacny_model.pdf`](model/zoo_relacny_model.pdf).
+Vznikol importom DDL zo `sql/` (File → Import → DDL File, Oracle Database 21c).
+
+![Relačný model ZOO](model/zoo_relacny_model.png)
+
+### Prehľad vzťahov
+
 ```mermaid
 erDiagram
     DRUH ||--o{ ZVIERA : "je druhom"
@@ -200,11 +210,16 @@ sql/
   01_typy.sql         objektové typy a kolekcie
   02_tabulky.sql      sekvencie, tabuľky, obmedzenia, indexy, komentáre
   install.sql         inštalácia celej schémy
+model/
+  zoo.dmd, zoo/       návrh v SQL Developer Data Modeler
+  zoo_relacny_model.pdf / .png   diagram relačného modelu
 ```
 
 ## Ďalšie kroky
 
-1. dátový model v SQL Developer Data Modeler (File → Import → DDL File) – na checkpoint a v tlačenej podobe,
-2. generátor testovacích dát (PL/SQL),
-3. špecifikácia a implementácia min. 12 výstupov,
-4. prístup k vzdialeným dátam, analýza indexov, grafické rozhranie (APEX).
+1. generátor testovacích dát (PL/SQL),
+2. špecifikácia a implementácia min. 12 výstupov,
+3. prístup k vzdialeným dátam, analýza indexov, grafické rozhranie (APEX).
+
+Pri zmene DDL treba model v Data Modeleri obnoviť (import DDL so zlúčením do `Relational_1`)
+a znova vyexportovať PDF a PNG.

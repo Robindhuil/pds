@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E06D06D-CFB8-F9C9-CBE6-8D971DC35015" name="zamestnanec">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Zamestnanci ZOO - osetrovatelia (krmenie) a veterinari (veterinarne zaznamy)]]></commentInRDBMS>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>5A8E0226-6AB3-3A3C-A357-8F1D1BCB240C</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_zamestnanca" id="7F59C5A0-A22A-FAF6-F234-07317401DC5F">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>5DDF57B2-519F-DE33-EB67-CC453DF1016E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>00C550A1-A891-AC47-CFAD-9D31F4FB5E86</domain>
+<defaultValue>seq_zamestnanec.NEXTVAL</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_zamestnanec</autoIncrementSequenceName>
+</Column>
+<Column name="meno" id="4F3CCD99-EC73-5F70-8B22-FDCC51178E38">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>589F44AC-2261-DE9B-ED13-3B2A2D3B6F9B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7E6CDFE7-0E48-C604-F324-473416DC59DB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="priezvisko" id="0228717E-5980-3081-02C8-0BB41BB45481">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>3F930A3A-90D2-46C0-588D-747BE3E7A7AA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7E6CDFE7-0E48-C604-F324-473416DC59DB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pozicia" id="E5B32884-64CC-2902-3E03-810D848FA10E">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>DD9929A0-1147-C2DB-75DA-24AC4F760E99</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>44266F52-6306-518B-F0F2-920F044C8829</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="9942FB05-B881-486F-A458-F2B9BEE854FF">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>B13A3345-8588-50FA-C6D8-858778FF9BC0</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DB738C00-3559-7BAC-224E-A605539E5835</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datum_nastupu" id="03B776C2-A0BE-D2A7-8199-4BCF4F86C27F">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>F7EBE2C5-7C65-3C4D-501A-B9B350F8BF8A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>8AE1C1AB-8D2D-1FB3-7427-878D28A1F20C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datum_odchodu" id="CF0B31FC-822F-AC54-12AE-F34915D0FAE7">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Prvy den, ked uz nepracuje (interval <datum_nastupu, datum_odchodu)); NULL = pracuje]]></commentInRDBMS>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>8551F909-D923-D222-EFA4-425CFA670762</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>8AE1C1AB-8D2D-1FB3-7427-878D28A1F20C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BB58547F-8AC0-11FB-2AEB-7ACDD3B78CAB" name="pk_zamestnanec">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>CA733ABA-2CFE-D2CB-7B45-5850CEFA2711</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F59C5A0-A22A-FAF6-F234-07317401DC5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="263C7651-418F-662D-527C-9BA762C2BA35" name="uk_zamestnanec_email">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>68024DB4-C6E4-9AA6-5578-293EAA261C1B</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9942FB05-B881-486F-A458-F2B9BEE854FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ch_zamestnanec_pozicia" directorySegmentName="seg_0" id="0051D904-EC87-4525-5794-BF29B7DF5929">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>C29BDF1F-5927-E796-01C6-5C84753532C6</importedID>
+<rule><![CDATA[pozicia IN ('OSETROVATEL', 'VETERINAR')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="ch_zamestnanec_datumy" directorySegmentName="seg_0" id="973EA4F4-D9C3-79B5-7AA1-7F63131BEDD9">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>F95AF880-1B34-5F93-1BFD-1BA6518F09CA</importedID>
+<rule><![CDATA[datum_odchodu IS NULL OR datum_odchodu > datum_nastupu]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

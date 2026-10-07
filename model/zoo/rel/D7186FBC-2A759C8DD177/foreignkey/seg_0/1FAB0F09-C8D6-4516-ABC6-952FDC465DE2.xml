@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1FAB0F09-C8D6-4516-ABC6-952FDC465DE2" containerWithKeyObject="9960060A-C582-F8BD-E215-C4D20FDF648F" localFKIndex="0F980AA2-7DB1-A546-5FA9-E33F46971993" name="fk_umiestnenie_vybeh">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>CF6BE501-BFEB-E646-2CAD-CD2F60EE6635</importedID>
+<referredTableLongName>vybeh</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B7D11700-3CAD-A78B-05DB-60118EB70C4D</referredTableID>
+<keyObject>CE49363C-9BDC-D6FA-78ED-BA5C31DC0F6F</keyObject>
+<referredKeyID>CE49363C-9BDC-D6FA-78ED-BA5C31DC0F6F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_vybehu</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

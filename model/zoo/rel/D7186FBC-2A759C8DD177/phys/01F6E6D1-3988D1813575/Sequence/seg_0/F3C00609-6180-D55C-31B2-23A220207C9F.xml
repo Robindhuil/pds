@@ -1,0 +1,10 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SequenceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SequenceOraclev10g" name="seq_krmenie" directorySegmentName="seg_0" id="F3C00609-6180-D55C-31B2-23A220207C9F">
+<sourceDDLFile>zoo_ddl.sql</sourceDDLFile>
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:25 UTC</createdTime>
+<ownerDesignName>zoo</ownerDesignName>
+<cache>1000</cache>
+<incrementBy>1</incrementBy>
+<startWith>1</startWith>
+</SequenceOraclev10g>

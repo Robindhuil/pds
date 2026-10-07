@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<CollectionType class="oracle.dbtools.crest.model.design.datatypes.CollectionType" name="t_lieky" directorySegmentName="seg_0" id="1477E6DF-0755-901D-1F01-41CB8B05FD00">
+<createdBy>robob</createdBy>
+<createdTime>2026-10-07 19:37:44 UTC</createdTime>
+<generatorID>9AA785D3-5E40-74FD-DCC0-D1F8854941D5</generatorID>
+<ownerDesignName>zoo</ownerDesignName>
+<importedID>9AA785D3-5E40-74FD-DCC0-D1F8854941D5</importedID>
+<predefined>false</predefined>
+<dataTypeDescr class="oracle.dbtools.crest.model.design.datatypes.CollectionType$DataTypeWrapper">
+<size></size>
+<type>8E3CF786-DB63-A0F6-6E61-9206A40CF0EF</type>
+<isreference>false</isreference>
+</dataTypeDescr>
+<maxElement>1</maxElement>
+<type>COLLECTION</type>
+</CollectionType>
