@@ -8,7 +8,7 @@
 <importDDLFileStamps>
 <importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
 <fileName>zoo_ddl.sql</fileName>
-<pathName>C:\Users\robob\AppData\Local\Temp\claude\C--Users-robob-Documents-ROBIN-fri\71a55b91-56d7-4af7-92a8-18c8a4c2cdf4\scratchpad\dm</pathName>
+<pathName>sql</pathName>
 <dbType>17</dbType>
 </importDDLFileStamp>
 </importDDLFileStamps>
